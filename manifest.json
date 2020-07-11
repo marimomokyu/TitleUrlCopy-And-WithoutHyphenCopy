@@ -1,0 +1,18 @@
+{
+    "manifest_version":2, 
+    "version":"1.0",
+    "name": "TitleUrlCopy And WithoutHyphenCopy",
+    "author": "Marimo",
+    "description": "1: When you press command+c(mac) or ctrl+c(win) with no character selected, save the page title and URL on the clipboard. 2: When you press command+c+c(mac) or ctrl+c+c(win) with no character selected,Make a copy with out the hyphen on the clipboard. ",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["script.js"], 
+            "matches": ["http://*/*", "https://*/*"] 
+        }
+    ]
+}
